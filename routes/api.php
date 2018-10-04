@@ -15,7 +15,7 @@ use Illuminate\Http\Request;
 /*
  * buyer
  */
-Route::Apiresource('buyer', 'Buyer\BuyerController',['only'=> ['index', 'show']]);
+Route::Apiresource('buyers', 'Buyer\BuyerController',['only'=> ['index', 'show']]);
 /*
  * category
  */
@@ -27,13 +27,13 @@ Route::Apiresource('products', 'Product\ProductController',['only'=> ['index', '
 /*
  * transaction
  */
-Route::Apiresource('transaction', 'Transaction\TransactionController',['only'=> ['index', 'show']]);
+Route::Apiresource('transactions', 'Transaction\TransactionController',['only'=> ['index', 'show']]);
 /*
  * seller
  */
-Route::Apiresource('seller', 'Seller\SellerController',['only'=> ['index', 'show']]);
+Route::Apiresource('sellers', 'Seller\SellerController',['only'=> ['index', 'show']]);
 /*
  * user
  */
-Route::Apiresource('user', 'User\UserController');
+Route::Apiresource('users', 'User\UserController');
 
